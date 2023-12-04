@@ -1,0 +1,88 @@
+@import url('https://fonts.cdnfonts.com/css/ds-digital');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+body {
+    animation: ava-animated 120s ease-in-out infinite;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#calculator {
+    width: 300px;
+    height: 400px;
+    background-color: rgba(128, 128, 128, 0.271);
+    border: 2px solid grey;
+}
+#result {
+    width: 271.5px;
+    height: 60px;
+    border-radius: 0%;
+    padding-left: 27px;
+    border-bottom: 2px solid grey;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    font-family: DS-Digital;
+    font-size: 23px;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: text;
+}
+.content {
+    padding-left: 26.5px;
+    padding-top: 20px;
+}
+button {
+    width: 55px;
+    height: 55px;
+    margin: 2px;
+    border: 0.5px solid rgba(128, 128, 128, 0.309);
+    background-color: rgba(240, 248, 255, 0.331);
+    font-size: 19px;
+    font-weight: 300;
+    font-family: roboto;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgba(128, 128, 128, 0.320);
+    transition: 0.08s;
+}
+button:active {
+    background-color: rgba(0, 128, 0, 0.282);
+    border: none;
+    border-radius: 5px;
+}
+#clear:active {
+    background-color: rgba(255, 0, 0, 0.271);
+}
+#calculateResult {
+    width: 181px;
+}
+
+@keyframes ava-animated {
+    0% {
+        background: radial-gradient(circle, rgba(72,3,255,1) 0%, rgba(190,5,198,1) 52%);
+    } 
+    25% {
+        background: linear-gradient(0deg, rgba(211,18,249,0.7035407913165266) 0%, rgba(0,166,41,0.8155856092436975) 100%);
+    }
+    50% {
+        background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    }
+    75% {
+        background: linear-gradient(90deg, rgba(58,71,180,0.7539609593837535) 0%, rgba(253,29,45,0.8015800070028012) 50%, rgba(252,204,69,0.7735688025210083) 100%);
+    }
+    100% {
+        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    }
+}
+
+@media (max-width: 1000px) {
+    button:hover {
+        background-color: rgba(240, 248, 255, 0.331);
+    }
+}
